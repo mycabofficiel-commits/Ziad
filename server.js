@@ -140,7 +140,7 @@ app.put('/api/projects/:id', async (req, res) => {
     );
 
     res.json({ success: true, project: result.rows[0] });
-  } catch (error) {
+  } catch (error) {h
     console.error('Erreur mise à jour projet:', error);
     res.status(500).json({ error: 'Erreur lors de la mise à jour du projet' });
   }
@@ -215,8 +215,7 @@ Format de réponse:
 
     // Extraire le code si présent
     let extractedCode = '';
-    const codeBlockRegex = /```(?:html|javascript|js|jsx|css|react)?\n([\s\S]*?)```/g;
-    let match;
+const codeBlockRegex = /```(?:html|javascript|js|jsx|css|react)?\n?([\s\S]*?)```/g;
     const codeBlocks = [];
 
     while ((match = codeBlockRegex.exec(assistantMessage)) !== null) {
