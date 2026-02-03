@@ -198,8 +198,7 @@ Quand tu génères du code:
 
 Format de réponse:
 - Explique brièvement ce que tu vas créer
-- Fournis le code dans des blocs ```html ou ```javascript
-- Donne des conseils d'amélioration si pertinent`,
+- Fournis le code dans des blocs \`\`\`html ou \`\`\`javascript- Donne des conseils d'amélioration si pertinent`,
       messages: messages
     });
 
