@@ -198,8 +198,7 @@ Quand tu génères du code:
 
 Format de réponse:
 - Explique brièvement ce que tu vas créer
-- Fournis le code dans des blocs de code [html ou javascript]      messages: messages
-    });
+// Fournis le code dans des blocs de code [html ou javascript]   
 
     const assistantMessage = response.content[0].text;
 
