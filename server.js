@@ -212,8 +212,7 @@ Format de réponse:
 
     // Extraire le code si présent
     let extractedCode = '';
-const codeBlockRegex = /```(?:html|javascript|js|jsx|css|react)?\n?([\s\S]*?)```/g;
-    const codeBlocks = [];
+const codeBlockRegex = /```(?:html|javascript|js|jsx|css|react)?\\n?([\\s\\S]*?)```/g;
 
     while ((match = codeBlockRegex.exec(assistantMessage)) !== null) {
       codeBlocks.push(match[1]);
